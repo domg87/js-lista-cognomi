@@ -21,7 +21,16 @@ for(var i = 0; i < listUser.length; i++) {
 
 // scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 
-var posizione;
+for (var i = 0; i < listUser.length; i++) {
+  if(listUser[i] == utente) {
+    var posizione = i + 1;
+  }
+}
+
+
+// // metodo + contratto e veloce indexOf()
+// var posizione = listUser.indexOf(utente) + 1;
+// document.getElementById("posizione").innerHTML = "Latua posizione é: " + posizione;
 
 // capitalizeFirstLetter per mettere la prima lettera in maiusc altrimenti non funziona l'ordine alfabetico
 
